@@ -20,7 +20,7 @@ public class BringToFront extends CordovaPlugin {
     if (action.equals("bringToFront")) {
       Log.d("Bring", "I see you baby");
       Intent notificationIntent = new Intent(cordova.getActivity(), cordova.getActivity().getClass());
-      notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+      notificationIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
       PendingIntent pendingIntent = PendingIntent.getActivity(cordova.getActivity(), 0, notificationIntent, 0);
       try 
       {
