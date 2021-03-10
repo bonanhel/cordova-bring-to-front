@@ -6,7 +6,7 @@
 	<license>Apache 2.0</license>
 	<keywords>cordova,android,activity,foreground</keywords>
 	<engines>
-		<engine name="cordova-android" version=">=4.0.0-dev" />
+		<engine name="cordova-android" version=">=4.0.0" />
 	</engines>
 	<platform name="android">
 		<source-file src="src/android/BringToFront.java"
